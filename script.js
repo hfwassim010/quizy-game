@@ -1,290 +1,300 @@
 const quiz = [
   {
-    question: "Which of the following is the correct way to declare a variable in JavaScript?",
-    correctAnswer: 2,
-    answers: ["let x == 5;", "var x <- 5;", "let x = 5;", "x := 5;"]
+    question: "How do you declare a variable in JavaScript?",
+    correctAnswer: 0,
+    answers: ["let x = 5;", "var x == 5;", "x := 5;", "let x"]
   },
   {
-    question: "What does `typeof null` return in JavaScript?",
+    question: "What does `typeof null` return?",
     correctAnswer: 1,
     answers: ["'null'", "'object'", "'undefined'", "'string'"]
   },
   {
-    question: "Which symbol is used for single-line comments in JavaScript?",
+    question: "Which symbol is used for single-line comments?",
     correctAnswer: 0,
-    answers: ["//", "#", "&lt;!-- --&gt;", "'"]
+    answers: ["//", "#", "<!-- -->", "'"]
   },
   {
-    question: "How do you write an arrow function in JavaScript?",
+    question: "How do you write an arrow function?",
     correctAnswer: 3,
     answers: [
-      "function x => { return x * 2; }",
-      "x -> { return x * 2; }",
-      "def x => x * 2;",
-      "(x) => { return x * 2; }"
+      "function x => { return x; }",
+      "x -> { return x; }",
+      "def x => x;",
+      "(x) => x"
     ]
   },
   {
-    question: "Which of these is NOT a valid JavaScript loop?",
-    correctAnswer: 1,
-    answers: ["for", "repeat-until", "while", "for...in"]
-  },
-  {
-    question: "Which keyword is used to define a constant in JavaScript?",
+    question: "Which keyword defines a constant?",
     correctAnswer: 3,
     answers: ["var", "let", "immutable", "const"]
   },
   {
-    question: "What is polymorphism in Object-Oriented Programming?",
-    correctAnswer: 2,
+    question: "What does `JSON.parse()` do?",
+    correctAnswer: 1,
     answers: [
-      "Restricting access to object properties.",
-      "Inheriting properties from another class.",
-      "The ability of a method to behave differently based on the object that calls it.",
-      "The process of overriding the parent class constructor."
+      "Converts an object to JSON",
+      "Parses JSON to an object",
+      "Validates a JSON string",
+      "Encodes JSON data"
     ]
   },
   {
-    question: "Which method converts a JSON string into a JavaScript object?",
-    correctAnswer: 1,
-    answers: ["JSON.stringify()", "JSON.parse()", "Object.create()", "JSON.objectify()"]
+    question: "What is OOP?",
+    correctAnswer: 0,
+    answers: [
+      "Programming based on objects and classes.",
+      "Code executed only line by line.",
+      "Programming without functions.",
+      "Building apps with no logic."
+    ]
   },
   {
-    question: "What will `console.log(typeof NaN)` output?",
+    question: "What is a class in JavaScript?",
+    correctAnswer: 2,
+    answers: [
+      "A blueprint for variables.",
+      "A CSS concept.",
+      "A blueprint for objects.",
+      "An external library."
+    ]
+  },
+  {
+    question: "Which keyword creates a class?",
+    correctAnswer: 0,
+    answers: ["class", "define", "constructor", "createClass"]
+  },
+  {
+    question: "What does `super()` do in a class?",
     correctAnswer: 3,
+    answers: [
+      "Creates a new object.",
+      "Calls the parent method.",
+      "Adds a new property.",
+      "Calls the parent constructor."
+    ]
+  },
+  {
+    question: "What is polymorphism?",
+    correctAnswer: 2,
+    answers: [
+      "Hiding class data.",
+      "Reusing code from other classes.",
+      "Methods behaving differently for different objects.",
+      "Returning multiple results."
+    ]
+  },
+  {
+    question: "What does `this` refer to?",
+    correctAnswer: 0,
+    answers: ["Current object", "Parent object", "Global context", "None"]
+  },
+  {
+    question: "Which method converts a JSON object to a string?",
+    correctAnswer: 1,
+    answers: ["JSON.parse()", "JSON.stringify()", "toString()", "JSON.convert()"]
+  },
+  {
+    question: "What is encapsulation?",
+    correctAnswer: 0,
+    answers: [
+      "Restricting access to object data.",
+      "Inheriting methods.",
+      "Defining a new object.",
+      "Exporting a class."
+    ]
+  },
+  {
+    question: "Which method adds an item to an array?",
+    correctAnswer: 1,
+    answers: ["shift()", "push()", "pop()", "add()"]
+  },
+  {
+    question: "What is inheritance?",
+    correctAnswer: 3,
+    answers: [
+      "Sharing class data with variables.",
+      "Duplicating code.",
+      "Returning multiple results.",
+      "Reusing properties and methods of a parent class."
+    ]
+  },
+  {
+    question: "Which loop is best for iterating over an array?",
+    correctAnswer: 3,
+    answers: ["while", "do...while", "for...in", "for"]
+  },
+  {
+    question: "What is the default value of uninitialized variables?",
+    correctAnswer: 2,
+    answers: ["null", "0", "undefined", "NaN"]
+  },
+  {
+    question: "What is a constructor?",
+    correctAnswer: 0,
+    answers: [
+      "A method for initializing objects.",
+      "A loop in JavaScript.",
+      "A class.",
+      "A reserved variable."
+    ]
+  },
+  {
+    question: "Which keyword is used to inherit a class?",
+    correctAnswer: 1,
+    answers: ["inherit", "extends", "super", "parent"]
+  },
+  {
+    question: "What does `5 == '5'` return?",
+    correctAnswer: 1,
+    answers: ["false", "true", "NaN", "Error"]
+  },
+  {
+    question: "What is abstraction?",
+    correctAnswer: 0,
+    answers: [
+      "Hiding implementation details.",
+      "Restricting access.",
+      "Simplifying inheritance.",
+      "Building functions."
+    ]
+  },
+  {
+    question: "What is `Object.create()` used for?",
+    correctAnswer: 2,
+    answers: [
+      "Parsing JSON.",
+      "Cloning an array.",
+      "Creating objects with a prototype.",
+      "Creating arrays."
+    ]
+  },
+  {
+    question: "What will `typeof NaN` return?",
+    correctAnswer: 2,
     answers: ["'undefined'", "'null'", "'number'", "'NaN'"]
   },
   {
-    question: "Which operator is used to check equality without type conversion?",
+    question: "How do you define a function?",
+    correctAnswer: 2,
+    answers: [
+      "func x() {}", "define x() {}", "function x() {}", "x => {}"
+    ]
+  },
+  {
+    question: "Which method removes the last item of an array?",
+    correctAnswer: 2,
+    answers: ["shift()", "push()", "pop()", "splice()"]
+  },
+  {
+    question: "How do you check equality without type conversion?",
     correctAnswer: 2,
     answers: ["=", "==", "===", "!=="]
   },
   {
-    question: "How do you write a conditional (ternary) operator in JavaScript?",
+    question: "What is the prototype chain?",
     correctAnswer: 0,
-    answers: ["condition ? expr1 : expr2", "if condition { expr1 } else { expr2 }", "if (condition) expr1; else expr2;", "condition : expr1 ? expr2"]
-  },
-  {
-    question: "Which method adds an element to the end of an array?",
-    correctAnswer: 1,
-    answers: ["shift()", "push()", "pop()", "append()"]
-  },
-  {
-    question: "How do you declare a function in JavaScript?",
-    correctAnswer: 2,
     answers: [
-      "def functionName() {}",
-      "function = functionName() {}",
-      "function functionName() {}",
-      "func functionName() {}"
+      "Inheritance mechanism in JavaScript.",
+      "A data structure.",
+      "A type of array.",
+      "String concatenation."
     ]
   },
   {
-    question: "What will `console.log(5 + '5')` output?",
-    correctAnswer: 3,
-    answers: ["10", "NaN", "'55'", "Error"]
+    question: "Which keyword defines a private field?",
+    correctAnswer: 1,
+    answers: ["_", "#", "private", "sealed"]
   },
   {
-    question: "What will the following code output?\n\nclass Parent {\n  constructor() {\n    this.name = 'Parent';\n  }\n  sayHello() {\n    return `Hello from ${this.name}`;\n  }\n}\n\nclass Child extends Parent {\n  constructor() {\n    super();\n    this.name = 'Child';\n  }\n}\n\nconst instance = new Child();\nconsole.log(instance.sayHello());",
+    question: "What is a static method?",
     correctAnswer: 3,
     answers: [
-      "Hello from Parent",
-      "Hello from undefined",
-      "SyntaxError: super must be called",
-      "Hello from Child"
+      "A global function.",
+      "A method attached to instances.",
+      "A dynamic method.",
+      "A method attached to the class itself."
     ]
   },
   {
-    question: "Which keyword is used to create a class in JavaScript?",
-    correctAnswer: 2,
-    answers: ["className", "object", "class", "define"]
-  },
-  {
-    question: "Which built-in method is used to convert a string to lowercase?",
-    correctAnswer: 1,
-    answers: ["toLower()", "toLowerCase()", "lower()", "convertToLower()"]
-  },
-  {
-    question: "Which of these is a valid way to declare a variable with block scope?",
+    question: "What does `Object.keys()` return?",
     correctAnswer: 0,
-    answers: ["let", "var", "const", "block"]
+    answers: [
+      "An array of keys.", "Object values.", "Object prototype.", "Object methods."
+    ]
   },
   {
-    question: "What does `console.log(5 == '5')` return?",
+    question: "What will `console.log([] == [])` return?",
+    correctAnswer: 0,
+    answers: ["false", "true", "undefined", "Error"]
+  },
+  {
+    question: "How do you declare a private field?",
+    correctAnswer: 0,
+    answers: ["#field", "private field", "_field", "field"]
+  },
+  {
+    question: "What will `5 + '5'` return?",
     correctAnswer: 1,
-    answers: ["false", "true", "NaN", "undefined"]
+    answers: ["10", "'55'", "NaN", "Error"]
   },
   {
-    question: "What will be the result of `0 === false` in JavaScript?",
+    question: "What does `Array.isArray()` check?",
+    correctAnswer: 0,
+    answers: [
+      "If a value is an array.",
+      "If a value is iterable.",
+      "If a value is null.",
+      "If a value is a string."
+    ]
+  },
+  {
+    question: "What does `console.log(this)` print?",
+    correctAnswer: 2,
+    answers: ["Parent object.", "Undefined.", "Depends on the context.", "Error."]
+  },
+  {
+    question: "Which loop guarantees one execution?",
+    correctAnswer: 0,
+    answers: ["do...while", "for", "while", "for...of"]
+  },
+  {
+    question: "What is method overriding?",
+    correctAnswer: 0,
+    answers: [
+      "Redefining a parent method in a child class.",
+      "Accessing parent methods.",
+      "Using global functions.",
+      "Executing methods in order."
+    ]
+  },
+  {
+    question: "What will `console.log(0 === false)` return?",
     correctAnswer: 0,
     answers: ["false", "true", "undefined", "NaN"]
   },
   {
-    question: "What will be the output of the following code?\n\nlet sum = 0;\nfor (let i = 1; i <= 3; i++) {\n  sum += i;\n}\nconsole.log(sum);",
+    question: "What does the `length` property of an array return?",
     correctAnswer: 0,
-    answers: ["6", "3", "1", "undefined"]
+    answers: ["Number of elements.", "Array keys.", "Array methods.", "Object size."]
   },
   {
-    question: "How do you define a JavaScript object?",
-    correctAnswer: 2,
-    answers: ["object obj = {}", "var obj = ()", "let obj = {}", "object obj = () => {}"]
-  },
-    {
-      question: "What will the expression `[] == []` return?",
-      correctAnswer: 0,
-      answers: ["false", "true", "undefined", "null"]
-    },
-  {
-    question: "Which of these methods is used to add a new element to the beginning of an array?",
-    correctAnswer: 0,
-    answers: ["unshift()", "push()", "pop()", "shift()"]
-  },
-  {
-    question: "Which type of data can be stored in an array?",
-    correctAnswer: 2,
-    answers: ["Only numbers", "Only strings", "Any data type", "Only objects"]
-  },
-  {
-    question: "What type of loop would be most appropriate for iterating through an array?\n",
-    correctAnswer: 2,
-    answers: ["while", "do...while", "for", "none"]
-  },
-  {
-    question: "What is the result of `5 + '5'` in JavaScript?",
-    correctAnswer: 2,
-    answers: ["'10'", "'55'", "NaN", "Error"]
-  },
-  {
-    question: "What will the following code output?\n\nclass BankAccount {\n  #balance = 0;\n  constructor(initialBalance) {\n    this.#balance = initialBalance;\n  }\n  getBalance() {\n    return this.#balance;\n  }\n}\n\nconst account = new BankAccount(100);\nconsole.log(account.getBalance());\nconsole.log(account.#balance);",
-    correctAnswer: 2,
-    answers: [
-      "100, undefined",
-      "100, null",
-      "100, SyntaxError",
-      "undefined, undefined"
-    ]
-  },
-  {
-    question: "What does `null == undefined` return?",
+    question: "Which operator combines objects?",
     correctAnswer: 1,
-    answers: ["true", "false", "undefined", "null"]
+    answers: ["concat", "spread (...)", "merge", "reduce"]
   },
   {
-    question: "What will the following code output?\n\nlet i = 0;\nwhile (i < 3) {\n  console.log(i);\n  i++;\n}",
-    correctAnswer: 1,
-    answers: ["0 1", "0 1 2", "3", "undefined"]
-  },
-  {
-    question: "Which of these methods returns the number of elements in an array?",
-    correctAnswer: 1,
-    answers: ["size()", "length()", "count()", "lengthOf()"]
-  },
-  {
-    question: "What is the result of `5 > 4 && 3 < 2` in JavaScript?",
-    correctAnswer: 0,
-    answers: ["false", "true", "undefined", "NaN"]
-  },
-  {
-    question: "Which of the following is a way to create a new object in JavaScript?",
-    correctAnswer: 2,
-    answers: ["let obj = new Object;", "let obj = new Object[];", "let obj = {}; ", "let obj = {}"]
-  },
-  {
-    question: "What will `console.log([1] == [1])` output?",
-    correctAnswer: 0,
-    answers: ["false", "true", "undefined", "NaN"]
-  },
-  {
-    question: "How many times will the loop execute?\n\nfor (let i = 0; i < 5; i += 2) {\n  console.log(i);\n}",
-    correctAnswer: 2,
-    answers: ["2", "3", "4", "5"]
-  },
-  {
-    question: "What is the correct syntax to define a JavaScript function?",
-    correctAnswer: 1,
-    answers: [
-      "functionName() => {}",
-      "function functionName() {}",
-      "function functionName {}",
-      "function function#Name() {}"
-    ]
-  },
-  {
-    question: "What is the result of `typeof NaN` in JavaScript?",
-    correctAnswer: 2,
-    answers: ["'string'", "'object'", "'number'", "'undefined'"]
-  },
-  {
-    question: "How do you define a default parameter for a function in JavaScript?",
-    correctAnswer: 0,
-    answers: ["function add(a, b = 5) {}", "function add(a, b) = 5 {}", "function add(a, b) { return 5 }", "function add(a, b) { b = 5 }"]
-  },
-  {
-    question: "Which statement best describes the difference between polymorphism and abstraction?",
-    correctAnswer: 1,
-    answers: [
-      "Polymorphism is about data hiding, while abstraction is about reusability.",
-      "Polymorphism deals with behavior across multiple objects, while abstraction focuses on exposing only essential features.",
-      "Abstraction is used for inheritance, while polymorphism is used for encapsulation.",
-      "Polymorphism allows multiple classes to inherit, while abstraction prevents it."
-    ]
-  },
-  {
-    question: "What does the `Array.isArray()` method do in JavaScript?",
-    correctAnswer: 1,
-    answers: ["Returns true if an object is a set", "Checks if the value is an array", "Returns the length of an array", "Converts an array into a string"]
-  },
-  {
-    question: "What does the `JSON.stringify()` method do?",
-    correctAnswer: 1,
-    answers: ["Parses a JSON string", "Converts a JavaScript object to a JSON string", "Creates a new JavaScript object", "Converts an object into a string"]
-  },
-  {
-    question: "What is the result of `3 * '3'` in JavaScript?",
-    correctAnswer: 2,
-    answers: ["'9'", "NaN", "9", "Error"]
-  },
-  {
-    question: "What is the key difference between a `while` loop and a `do...while` loop?",
-    correctAnswer: 0,
-    answers: ["`do...while` always executes the body at least once", "They are identical", "`while` is faster", "`do...while` is only for infinite loops"]
-  },
-  {
-    question: "What will the following code output?\n\nclass Vehicle {\n  constructor(type) {\n    this.type = type;\n  }\n  describe() {\n    return `This is a ${this.type}.`;\n  }\n}\n\nclass Car extends Vehicle {\n  constructor(brand) {\n    super('Car');\n    this.brand = brand;\n  }\n  describe() {\n    return `${super.describe()} It is a ${this.brand}.`;\n  }\n}\n\nconst myCar = new Car('Toyota');\nconsole.log(myCar.describe());",
+    question: "What is `bind()` used for?",
     correctAnswer: 0,
     answers: [
-      "This is a Car. It is a Toyota.",
-      "This is a Vehicle. It is a Toyota.",
-      "Error: super() must be called before accessing 'this'",
-      "This is a Toyota."
-    ]
-  },
-  {
-    question: "Which method is used to find the index of an element in an array?",
-    correctAnswer: 2,
-    answers: ["indexOf()", "findIndex()", "lastIndexOf()", "find()"]
-  },
-  {
-    question: "What will `console.log('a' + +'b')` output?",
-    correctAnswer: 3,
-    answers: ["'aNaN'", "'ab'", "'NaN'", "Error"]
-  },
-  {
-    question: "How do you convert a string into a number in JavaScript?",
-    correctAnswer: 1,
-    answers: ["parseInt(string)", "Number(string)", "parseFloat(string)", "string.toNumber()"]
-  },
-  {
-    question: "What will the following code output?\n\nclass Person {\n  constructor(name, age) {\n    this.name = name;\n    this.age = age;\n  }\n  greet() {\n    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;\n  }\n}\n\nconst person = new Person('Alice', 25);\nconsole.log(person.greet());",
-    correctAnswer: 0,
-    answers: [
-      "Hello, my name is Alice and I am 25 years old.",
-      "Hello, my name is undefined and I am undefined years old.",
-      "Error",
-      "Hello, my name is Alice."
+      "Set `this` context of a function.",
+      "Clone functions.",
+      "Freeze objects.",
+      "Define methods."
     ]
   }
 ];
+
 
 var stepHistory = [];
 var step;

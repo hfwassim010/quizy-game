@@ -22,7 +22,7 @@ h2 {
 
 .main {
     width: 720px;
-    height: 450px;
+    height: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -104,14 +104,13 @@ h2 {
 
 #container #question {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     padding: 10px;
     border-bottom: 2px solid rgb(37, 39, 43);
     margin-bottom: 5px;
     transition: 0.5s;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    white-space: normal;  /* Allow text wrapping */
     width: 710px;  /* Ensure it takes the full width available */
 }
 
