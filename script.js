@@ -35,6 +35,16 @@ const quiz = [
     answers: ["var", "let", "immutable", "const"]
   },
   {
+    question: "What is polymorphism in Object-Oriented Programming?",
+    correctAnswer: 2,
+    answers: [
+      "Restricting access to object properties.",
+      "Inheriting properties from another class.",
+      "The ability of a method to behave differently based on the object that calls it.",
+      "The process of overriding the parent class constructor."
+    ]
+  },
+  {
     question: "Which method converts a JSON string into a JavaScript object?",
     correctAnswer: 1,
     answers: ["JSON.stringify()", "JSON.parse()", "Object.create()", "JSON.objectify()"]
@@ -75,6 +85,16 @@ const quiz = [
     answers: ["10", "NaN", "'55'", "Error"]
   },
   {
+    question: "What will the following code output?\n\nclass Parent {\n  constructor() {\n    this.name = 'Parent';\n  }\n  sayHello() {\n    return `Hello from ${this.name}`;\n  }\n}\n\nclass Child extends Parent {\n  constructor() {\n    super();\n    this.name = 'Child';\n  }\n}\n\nconst instance = new Child();\nconsole.log(instance.sayHello());",
+    correctAnswer: 3,
+    answers: [
+      "Hello from Parent",
+      "Hello from undefined",
+      "SyntaxError: super must be called",
+      "Hello from Child"
+    ]
+  },
+  {
     question: "Which keyword is used to create a class in JavaScript?",
     correctAnswer: 2,
     answers: ["className", "object", "class", "define"]
@@ -100,15 +120,20 @@ const quiz = [
     answers: ["false", "true", "undefined", "NaN"]
   },
   {
+    question: "What will be the output of the following code?\n\nlet sum = 0;\nfor (let i = 1; i <= 3; i++) {\n  sum += i;\n}\nconsole.log(sum);",
+    correctAnswer: 0,
+    answers: ["6", "3", "1", "undefined"]
+  },
+  {
     question: "How do you define a JavaScript object?",
     correctAnswer: 2,
     answers: ["object obj = {}", "var obj = ()", "let obj = {}", "object obj = () => {}"]
   },
-  {
-    question: "What will the expression `[] == []` return?",
-    correctAnswer: 0,
-    answers: ["false", "true", "undefined", "null"]
-  },
+    {
+      question: "What will the expression `[] == []` return?",
+      correctAnswer: 0,
+      answers: ["false", "true", "undefined", "null"]
+    },
   {
     question: "Which of these methods is used to add a new element to the beginning of an array?",
     correctAnswer: 0,
@@ -120,14 +145,34 @@ const quiz = [
     answers: ["Only numbers", "Only strings", "Any data type", "Only objects"]
   },
   {
+    question: "What type of loop would be most appropriate for iterating through an array?\n",
+    correctAnswer: 2,
+    answers: ["while", "do...while", "for", "none"]
+  },
+  {
     question: "What is the result of `5 + '5'` in JavaScript?",
     correctAnswer: 2,
     answers: ["'10'", "'55'", "NaN", "Error"]
   },
   {
+    question: "What will the following code output?\n\nclass BankAccount {\n  #balance = 0;\n  constructor(initialBalance) {\n    this.#balance = initialBalance;\n  }\n  getBalance() {\n    return this.#balance;\n  }\n}\n\nconst account = new BankAccount(100);\nconsole.log(account.getBalance());\nconsole.log(account.#balance);",
+    correctAnswer: 2,
+    answers: [
+      "100, undefined",
+      "100, null",
+      "100, SyntaxError",
+      "undefined, undefined"
+    ]
+  },
+  {
     question: "What does `null == undefined` return?",
     correctAnswer: 1,
     answers: ["true", "false", "undefined", "null"]
+  },
+  {
+    question: "What will the following code output?\n\nlet i = 0;\nwhile (i < 3) {\n  console.log(i);\n  i++;\n}",
+    correctAnswer: 1,
+    answers: ["0 1", "0 1 2", "3", "undefined"]
   },
   {
     question: "Which of these methods returns the number of elements in an array?",
@@ -150,13 +195,18 @@ const quiz = [
     answers: ["false", "true", "undefined", "NaN"]
   },
   {
+    question: "How many times will the loop execute?\n\nfor (let i = 0; i < 5; i += 2) {\n  console.log(i);\n}",
+    correctAnswer: 2,
+    answers: ["2", "3", "4", "5"]
+  },
+  {
     question: "What is the correct syntax to define a JavaScript function?",
-    correctAnswer: 3,
+    correctAnswer: 1,
     answers: [
       "functionName() => {}",
       "function functionName() {}",
       "function functionName {}",
-      "function functionName() {}"
+      "function function#Name() {}"
     ]
   },
   {
@@ -168,6 +218,16 @@ const quiz = [
     question: "How do you define a default parameter for a function in JavaScript?",
     correctAnswer: 0,
     answers: ["function add(a, b = 5) {}", "function add(a, b) = 5 {}", "function add(a, b) { return 5 }", "function add(a, b) { b = 5 }"]
+  },
+  {
+    question: "Which statement best describes the difference between polymorphism and abstraction?",
+    correctAnswer: 1,
+    answers: [
+      "Polymorphism is about data hiding, while abstraction is about reusability.",
+      "Polymorphism deals with behavior across multiple objects, while abstraction focuses on exposing only essential features.",
+      "Abstraction is used for inheritance, while polymorphism is used for encapsulation.",
+      "Polymorphism allows multiple classes to inherit, while abstraction prevents it."
+    ]
   },
   {
     question: "What does the `Array.isArray()` method do in JavaScript?",
@@ -185,19 +245,44 @@ const quiz = [
     answers: ["'9'", "NaN", "9", "Error"]
   },
   {
+    question: "What is the key difference between a `while` loop and a `do...while` loop?",
+    correctAnswer: 0,
+    answers: ["`do...while` always executes the body at least once", "They are identical", "`while` is faster", "`do...while` is only for infinite loops"]
+  },
+  {
+    question: "What will the following code output?\n\nclass Vehicle {\n  constructor(type) {\n    this.type = type;\n  }\n  describe() {\n    return `This is a ${this.type}.`;\n  }\n}\n\nclass Car extends Vehicle {\n  constructor(brand) {\n    super('Car');\n    this.brand = brand;\n  }\n  describe() {\n    return `${super.describe()} It is a ${this.brand}.`;\n  }\n}\n\nconst myCar = new Car('Toyota');\nconsole.log(myCar.describe());",
+    correctAnswer: 0,
+    answers: [
+      "This is a Car. It is a Toyota.",
+      "This is a Vehicle. It is a Toyota.",
+      "Error: super() must be called before accessing 'this'",
+      "This is a Toyota."
+    ]
+  },
+  {
     question: "Which method is used to find the index of an element in an array?",
     correctAnswer: 2,
     answers: ["indexOf()", "findIndex()", "lastIndexOf()", "find()"]
   },
   {
     question: "What will `console.log('a' + +'b')` output?",
-    correctAnswer: 0,
+    correctAnswer: 3,
     answers: ["'aNaN'", "'ab'", "'NaN'", "Error"]
   },
   {
     question: "How do you convert a string into a number in JavaScript?",
     correctAnswer: 1,
     answers: ["parseInt(string)", "Number(string)", "parseFloat(string)", "string.toNumber()"]
+  },
+  {
+    question: "What will the following code output?\n\nclass Person {\n  constructor(name, age) {\n    this.name = name;\n    this.age = age;\n  }\n  greet() {\n    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;\n  }\n}\n\nconst person = new Person('Alice', 25);\nconsole.log(person.greet());",
+    correctAnswer: 0,
+    answers: [
+      "Hello, my name is Alice and I am 25 years old.",
+      "Hello, my name is undefined and I am undefined years old.",
+      "Error",
+      "Hello, my name is Alice."
+    ]
   }
 ];
 
