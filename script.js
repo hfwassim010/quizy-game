@@ -205,7 +205,7 @@ var stepHistory = [];
 var step;
 var chance = 0;
 var score = 0;
-var timeIN = 5
+var timeIN = 20
 var timeLeft = 0
 var totalTimeConsume = 0
 
