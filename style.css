@@ -39,11 +39,10 @@ h2 {
     height: 50px;
     padding: 30px;
     display: grid;
-    grid-template-columns: max-content max-content 1fr;
+    grid-template-columns: max-content max-content max-content max-content;
     justify-items: center;
     align-items: center;
     justify-content: center;
-    align-content: center;
     position: relative;
     gap: 20px;
 }
@@ -52,10 +51,6 @@ h2 {
     transition: 0.25s;
 }
 
-#time {
-    position: absolute;
-    right: 0;
-}
 
 .score-board #time-consome {
     font-size: 16px;

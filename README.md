@@ -5,6 +5,8 @@
 ## **Quizy App Overview**
 **Quizy** is an interactive quiz application designed to challenge users with questions and track their performance over time. It includes dynamic feedback, personalized messages, and time management features to enhance user engagement and learning. The app is developed by **Hf Wassim** with a focus on user-friendly design, efficient development practices, and seamless performance.
 
+<img src="screen1.png" alt="">
+
 ---
 
 ## **Features**
